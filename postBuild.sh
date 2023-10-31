@@ -1,11 +1,8 @@
-#!/bin/bash
+# Ensure nodejs is installed for JupyterLab extension builds
+conda install -c conda-forge nodejs
 
-# Install Dash
-pip install dash==1.20.0
-
+# Install the JupyterLab extension
 jupyter labextension install @plotly/dash-jupyterlab
+
+# Build JupyterLab with the new extension
 jupyter lab build
-
-
-# Allow Binder to run the Dash app on port 8050
-echo 'c.ServerProxy.servers = {"8050": {"command": ["python", "simulation_script.py"]}}' >> ~/.jupyter/jupyter_notebook_config.py
