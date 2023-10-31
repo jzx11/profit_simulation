@@ -5,8 +5,6 @@ numpy==1.25.2
 pandas==2.1.1
 plotly==5.9.0
 scipy==1.11.3
-jupyterlab==3.*  # Version 3 is recommended for most JupyterLab extensions
 dash-renderer
-jupyter_dash==0.4.2
 
 jupyter-server-proxy

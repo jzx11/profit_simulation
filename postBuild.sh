@@ -5,4 +5,5 @@ conda install -c conda-forge nodejs
 jupyter labextension install @plotly/dash-jupyterlab
 
 # Build JupyterLab with the new extension
+jupyter lab clean
 jupyter lab build
